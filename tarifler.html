@@ -1,91 +1,100 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
-    <title>Gizli Minecraft Tarifleri</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #1c1c1c;
+            background-color: #1e1e1e;
             color: #f0f0f0;
-            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-family: 'Nunito Sans', sans-serif;
+            padding: 20px;
             margin: 0;
-            padding: 0;
         }
         header {
-            background-color: #00cc66;
+            background-color: #00aaff;
             padding: 20px;
             text-align: center;
+            color: white;
         }
         h1 {
+            font-size: 2em;
             margin: 0;
-            font-size: 2.5em;
-            color: #ffffff;
         }
         .content {
-            padding: 30px;
             max-width: 900px;
-            margin: auto;
+            margin: 30px auto;
+            background-color: #2c2c2c;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 12px #00aaff;
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 25px;
-            background-color: #2e2e2e;
-            border-radius: 10px;
-            overflow: hidden;
+            margin-top: 20px;
+            background-color: #3a3a3a;
         }
         th, td {
-            border: 1px solid #444;
-            padding: 15px;
+            border: 1px solid #555;
+            padding: 12px;
             text-align: left;
         }
         th {
-            background-color: #00cc66;
+            background-color: #00aaff;
             color: white;
         }
-        tr:hover {
+        .entry {
+            margin-bottom: 20px;
+            padding: 15px;
             background-color: #3d3d3d;
+            border-left: 6px solid #00aaff;
+            border-radius: 6px;
+        }
+        .block-card {
+            background-color: #3a3a3a;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 10px;
+            width: 220px;
+            text-align: center;
+            box-shadow: 0 0 10px #555;
+        }
+        .block-img {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 10px;
+        }
+        .question {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .option {
+            margin: 8px 0;
+            padding: 10px;
+            background-color: #444;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .correct {
+            background-color: #4caf50 !important;
+        }
+        .wrong {
+            background-color: #f44336 !important;
         }
     </style>
-</head>
+
 <body>
-    <header>
-        <h1>Gizli Minecraft Tarifleri</h1>
-    </header>
-    <div class="content">
-        <p>İşte sadece en profesyonel oyuncuların bildiği bazı gizli tarifler!</p>
-        <table>
-            <tr>
-                <th>Eşya Adı</th>
-                <th>Tarif (Crafting) Açıklaması</th>
-                <th>Neye Yarar?</th>
-            </tr>
-            <tr>
-                <td>End Crystal</td>
-                <td>7 Cam + Nether Star + Gözyaşı</td>
-                <td>End dünyasında yeniden doğma noktası koyar</td>
-            </tr>
-            <tr>
-                <td>Spectral Arrow</td>
-                <td>Ok + Glowstone Dust</td>
-                <td>Düşmanı parlatır, duvar arkasında bile görünür yapar</td>
-            </tr>
-            <tr>
-                <td>Name Tag Sırrı</td>
-                <td>İsim: Dinnerbone veya Grumm</td>
-                <td>Canlıyı ters çevirir</td>
-            </tr>
-            <tr>
-                <td>Composter Hilesi</td>
-                <td>Patates, tohum, çimen at → Kemik Tozu üret</td>
-                <td>Sınırsız bonemeal üretimi sağlar</td>
-            </tr>
-            <tr>
-                <td>Banner Shield</td>
-                <td>Kalkan + Banner</td>
-                <td>Kalkanı bayrakla özelleştir</td>
-            </tr>
-        </table>
-    </div>
-</body>
-</html>
+<header><h1>Gizli Minecraft Tarifleri</h1></header>
+<div class="content">
+    <table>
+        <tr><th>Eşya Adı</th><th>Tarif</th><th>Neye Yarar?</th></tr>
+        <tr><td>End Crystal</td><td>7 Cam + Nether Star + Gözyaşı</td><td>End dünyasında yeniden doğma noktası koyar</td></tr>
+        <tr><td>Spectral Arrow</td><td>Ok + Glowstone Dust</td><td>Düşmanı parlatır, görünür yapar</td></tr>
+        <tr><td>Name Tag</td><td>Dinnerbone/Grumm yaz</td><td>Canlıyı ters çevirir</td></tr>
+        <tr><td>Composter</td><td>Çimen, patates at → bonemeal üret</td><td>Gübre kaynağı</td></tr>
+        <tr><td>Banner Shield</td><td>Kalkan + Banner</td><td>Bayraklı kalkan yapar</td></tr>
+    </table>
+</div>
+</body></html>

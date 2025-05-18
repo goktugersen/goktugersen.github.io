@@ -1,93 +1,97 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
-    <title>Blok Defteri</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #222;
+            background-color: #1e1e1e;
             color: #f0f0f0;
-            font-family: 'Comic Sans MS', cursive, sans-serif;
+            font-family: 'Nunito Sans', sans-serif;
+            padding: 20px;
             margin: 0;
-            padding: 0;
         }
         header {
-            background-color: #8bc34a;
+            background-color: #00aaff;
             padding: 20px;
             text-align: center;
+            color: white;
         }
         h1 {
+            font-size: 2em;
             margin: 0;
-            font-size: 2.5em;
-            color: #fff;
         }
         .content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: #2c2c2c;
             padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 12px #00aaff;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #3a3a3a;
+        }
+        th, td {
+            border: 1px solid #555;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #00aaff;
+            color: white;
+        }
+        .entry {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #3d3d3d;
+            border-left: 6px solid #00aaff;
+            border-radius: 6px;
         }
         .block-card {
-            background-color: #333;
+            background-color: #3a3a3a;
             margin: 10px;
             padding: 15px;
             border-radius: 10px;
             width: 220px;
             text-align: center;
-            transition: 0.3s;
             box-shadow: 0 0 10px #555;
-        }
-        .block-card:hover {
-            background-color: #444;
-            box-shadow: 0 0 20px #8bc34a;
         }
         .block-img {
             width: 64px;
             height: 64px;
             margin-bottom: 10px;
         }
-        .block-title {
+        .question {
             font-size: 1.2em;
-            font-weight: bold;
-            color: #8bc34a;
+            margin-bottom: 10px;
         }
-        .block-desc {
-            font-size: 0.95em;
-            margin-top: 8px;
-            color: #ccc;
+        .option {
+            margin: 8px 0;
+            padding: 10px;
+            background-color: #444;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .correct {
+            background-color: #4caf50 !important;
+        }
+        .wrong {
+            background-color: #f44336 !important;
         }
     </style>
-</head>
+
 <body>
-    <header>
-        <h1>Göktuğ’un Blok Defteri</h1>
-    </header>
-    <div class="content">
-        <div class="block-card">
-            <img src="diamond_block.png" alt="Elmas Blok" class="block-img">
-            <div class="block-title">Elmas Bloğu</div>
-            <div class="block-desc">9 elmasla yapılır, zenginliğin sembolüdür.</div>
-        </div>
-        <div class="block-card">
-            <img src="obsidian.png" alt="Obsidyen" class="block-img">
-            <div class="block-title">Obsidyen</div>
-            <div class="block-desc">Su ve lav buluşunca oluşur, nether portalı için gereklidir.</div>
-        </div>
-        <div class="block-card">
-            <img src="beacon.png" alt="Beacon" class="block-img">
-            <div class="block-title">Beacon</div>
-            <div class="block-desc">Işık yayar ve güç verir; nether yıldızı ile yapılır.</div>
-        </div>
-        <div class="block-card">
-            <img src="netherite.png" alt="Netherite" class="block-img">
-            <div class="block-title">Netherite</div>
-            <div class="block-desc">Minecraft’ın en dayanıklı materyali, lavda bile yanmaz.</div>
-        </div>
-        <div class="block-card">
-            <img src="redstone_block.png" alt="Redstone Blok" class="block-img">
-            <div class="block-title">Redstone Bloku</div>
-            <div class="block-desc">Enerji kaynağıdır, pistonlar ve tuzaklarda kullanılır.</div>
-        </div>
-    </div>
-</body>
-</html>
+<header><h1>Blok Defteri</h1></header>
+<div class="content" style="display:flex; flex-wrap:wrap; justify-content:center;">
+    <div class="block-card"><img src="diamond_block.png" class="block-img"><div><strong>Elmas Blok</strong><br>9 elmasla yapılır.</div></div>
+    <div class="block-card"><img src="obsidian.png" class="block-img"><div><strong>Obsidyen</strong><br>Lava + su → portal taşı</div></div>
+    <div class="block-card"><img src="beacon.png" class="block-img"><div><strong>Beacon</strong><br>Işık verir, güç sağlar</div></div>
+    <div class="block-card"><img src="netherite.png" class="block-img"><div><strong>Netherite</strong><br>Lavda yanmaz, çok güçlüdür</div></div>
+    <div class="block-card"><img src="redstone_block.png" class="block-img"><div><strong>Redstone Blok</strong><br>Enerji verir</div></div>
+</div>
+</body></html>

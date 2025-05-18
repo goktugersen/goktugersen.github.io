@@ -1,61 +1,95 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
-    <title>Göktuğ’un Minecraft Günlüğü</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #f4ecd8;
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-            color: #3d3d3d;
+            background-color: #1e1e1e;
+            color: #f0f0f0;
+            font-family: 'Nunito Sans', sans-serif;
             padding: 20px;
             margin: 0;
         }
         header {
-            background-color: #b57f4e;
+            background-color: #00aaff;
             padding: 20px;
             text-align: center;
             color: white;
         }
         h1 {
+            font-size: 2em;
             margin: 0;
         }
-        .entry {
-            background-color: #fff8e1;
-            border-left: 8px solid #b57f4e;
+        .content {
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: #2c2c2c;
             padding: 20px;
-            margin: 20px auto;
-            max-width: 800px;
-            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
             border-radius: 10px;
+            box-shadow: 0 0 12px #00aaff;
         }
-        .entry h2 {
-            margin-top: 0;
-            color: #5a3e1b;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #3a3a3a;
+        }
+        th, td {
+            border: 1px solid #555;
+            padding: 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #00aaff;
+            color: white;
+        }
+        .entry {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #3d3d3d;
+            border-left: 6px solid #00aaff;
+            border-radius: 6px;
+        }
+        .block-card {
+            background-color: #3a3a3a;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 10px;
+            width: 220px;
+            text-align: center;
+            box-shadow: 0 0 10px #555;
+        }
+        .block-img {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 10px;
+        }
+        .question {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .option {
+            margin: 8px 0;
+            padding: 10px;
+            background-color: #444;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .correct {
+            background-color: #4caf50 !important;
+        }
+        .wrong {
+            background-color: #f44336 !important;
         }
     </style>
-</head>
+
 <body>
-    <header>
-        <h1>Göktuğ’un Minecraft Günlüğü</h1>
-    </header>
-
-    <div class="entry">
-        <h2>1. Gün – Elmas Avı</h2>
-        <p>Bugün kazarken bir anda LAVA’ya düştüm! Ama neyse ki su kovam vardı.<br>
-        Sonunda 6 tane elmas buldum. Elmas bloğu yapmaya 3 tane daha lazım!</p>
-    </div>
-
-    <div class="entry">
-        <h2>2. Gün – Creeper Şoku</h2>
-        <p>Evime dönerken arkamda “sssssss” diye bir ses duydum.<br>
-        Döndüm… Boom! Creeper kapımı patlattı, ama kedim hala hayatta!</p>
-    </div>
-
-    <div class="entry">
-        <h2>3. Gün – Gizli Geçit</h2>
-        <p>Bugün dağda gizli bir geçit buldum. Redstone kapısını yanlışlıkla açtım.<br>
-        İçeride 3 altın elma ve 1 müzik diski vardı. Galiba şanslı günüm!</p>
-    </div>
-</body>
-</html>
+<header><h1>Göktuğ’un Minecraft Günlüğü</h1></header>
+<div class="content">
+    <div class="entry"><strong>1. Gün:</strong> Lava düştüm ama su kovam vardı! 6 elmas buldum.</div>
+    <div class="entry"><strong>2. Gün:</strong> Creeper kapımı patlattı! Kedim hala yaşıyor.</div>
+    <div class="entry"><strong>3. Gün:</strong> Gizli geçit buldum, içinde altın elma ve müzik diski vardı!</div>
+</div>
+</body></html>
