@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Minecraft Mini Oyun</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #f0f0f0;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            padding: 20px;
+            margin: 0;
+        }
+        header {
+            background-color: #ff9800;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        .quiz-container {
+            max-width: 700px;
+            margin: 40px auto;
+            background-color: #1e1e1e;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 0 15px #ff9800;
+        }
+        .question {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .option {
+            display: block;
+            margin-bottom: 10px;
+            padding: 10px 15px;
+            background-color: #333;
+            border: 2px solid #444;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .option:hover {
+            background-color: #444;
+        }
+        .correct {
+            background-color: #4caf50 !important;
+            border-color: #4caf50 !important;
+        }
+        .wrong {
+            background-color: #f44336 !important;
+            border-color: #f44336 !important;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mini Oyun: Minecraft Bilgi Yarışması</h1>
+    </header>
+    <div class="quiz-container">
+        <div class="question">
+            Lavda hangisi yanmaz?
+        </div>
+        <div class="option" onclick="checkAnswer(this, true)">Netherite</div>
+        <div class="option" onclick="checkAnswer(this, false)">Elmas</div>
+        <div class="option" onclick="checkAnswer(this, false)">Altın</div>
+        <div class="option" onclick="checkAnswer(this, false)">Demir</div>
+    </div>
+
+    <div class="quiz-container">
+        <div class="question">
+            “Dinnerbone” ismini yazarsan ne olur?
+        </div>
+        <div class="option" onclick="checkAnswer(this, true)">Canlı ters döner</div>
+        <div class="option" onclick="checkAnswer(this, false)">Işık saçmaya başlar</div>
+        <div class="option" onclick="checkAnswer(this, false)">End’e ışınlanır</div>
+        <div class="option" onclick="checkAnswer(this, false)">Görünmez olur</div>
+    </div>
+
+    <script>
+        function checkAnswer(element, isCorrect) {
+            if (isCorrect) {
+                element.classList.add("correct");
+                element.innerHTML += " ✓";
+            } else {
+                element.classList.add("wrong");
+                element.innerHTML += " ✗";
+            }
+
+            // Diğer şıkları pasifleştir
+            const siblings = element.parentElement.querySelectorAll(".option");
+            siblings.forEach(opt => {
+                opt.onclick = null;
+            });
+        }
+    </script>
+</body>
+</html>
