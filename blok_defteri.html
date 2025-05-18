@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Blok Defteri</title>
+    <style>
+        body {
+            background-color: #222;
+            color: #f0f0f0;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #8bc34a;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #fff;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .block-card {
+            background-color: #333;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 10px;
+            width: 220px;
+            text-align: center;
+            transition: 0.3s;
+            box-shadow: 0 0 10px #555;
+        }
+        .block-card:hover {
+            background-color: #444;
+            box-shadow: 0 0 20px #8bc34a;
+        }
+        .block-img {
+            width: 64px;
+            height: 64px;
+            margin-bottom: 10px;
+        }
+        .block-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #8bc34a;
+        }
+        .block-desc {
+            font-size: 0.95em;
+            margin-top: 8px;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Göktuğ’un Blok Defteri</h1>
+    </header>
+    <div class="content">
+        <div class="block-card">
+            <img src="diamond_block.png" alt="Elmas Blok" class="block-img">
+            <div class="block-title">Elmas Bloğu</div>
+            <div class="block-desc">9 elmasla yapılır, zenginliğin sembolüdür.</div>
+        </div>
+        <div class="block-card">
+            <img src="obsidian.png" alt="Obsidyen" class="block-img">
+            <div class="block-title">Obsidyen</div>
+            <div class="block-desc">Su ve lav buluşunca oluşur, nether portalı için gereklidir.</div>
+        </div>
+        <div class="block-card">
+            <img src="beacon.png" alt="Beacon" class="block-img">
+            <div class="block-title">Beacon</div>
+            <div class="block-desc">Işık yayar ve güç verir; nether yıldızı ile yapılır.</div>
+        </div>
+        <div class="block-card">
+            <img src="netherite.png" alt="Netherite" class="block-img">
+            <div class="block-title">Netherite</div>
+            <div class="block-desc">Minecraft’ın en dayanıklı materyali, lavda bile yanmaz.</div>
+        </div>
+        <div class="block-card">
+            <img src="redstone_block.png" alt="Redstone Blok" class="block-img">
+            <div class="block-title">Redstone Bloku</div>
+            <div class="block-desc">Enerji kaynağıdır, pistonlar ve tuzaklarda kullanılır.</div>
+        </div>
+    </div>
+</body>
+</html>
