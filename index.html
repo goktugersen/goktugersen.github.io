@@ -35,13 +35,20 @@
         }
         .button {
             display: inline-block;
-            margin-top: 20px;
+            margin: 10px 5px;
             padding: 12px 24px;
             font-size: 18px;
             color: white;
             background-color: #00aaff;
             text-decoration: none;
             border-radius: 8px;
+        }
+        .button:hover {
+            background-color: #008fcc;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 30px;
         }
     </style>
 </head>
@@ -71,7 +78,11 @@
         <p><strong>Unutma:</strong> Bu sitede herkes <em>VIP Craft Ustası!</em><br>
         Eğlenceye hazır mısın?</p>
 
-        <a href="#" class="button">Tariflere Git</a>
+        <div class="button-container">
+            <a href="tarifler.html" class="button">Tariflere Git</a>
+            <a href="goktug_gunlugu.html" class="button">Günlüğü Oku</a>
+            <a href="blok_defteri.html" class="button">Blok Defteri</a>
+        </div>
     </div>
 </body>
 </html>
